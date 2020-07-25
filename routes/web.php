@@ -16,4 +16,18 @@ Route::get('/', function () {
 });
 
 
-Route::get('/wx/token','TextController@getWxController');
+Route::any('/login','TestController@login');
+Route::any('/userInfo','TestController@userInfo');
+Route::any('/sign','TestController@sign');
+
+Route::post('/user/reg','TextController@reg');
+Route::post('/user/login','TextController@login');
+Route::get('/user/center','TextController@center');
+
+Route::get('/goods','GoodsController@goods');
+
+//非对称加密
+Route::get('test/rsa1','TextController@rsa1');
+
+//签名
+Route::get('test/sign','TextController@sign');

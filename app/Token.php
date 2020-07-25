@@ -4,10 +4,10 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class User extends Model
+class Token extends Model
 {
     //
-    public $table="user";
-    protected $primaryKey="user_id";
+    public $table="token";
+    protected $primaryKey="id";
     public $timestamps = false;
 }
